@@ -1,0 +1,21 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">{{post.title}}</div>
+  <div class="panel-body">
+    {{post.description}} <br>
+    {{#if post.picture}}
+      <img src={{post.picture}}>
+    {{/if}}
+  </div>
+  <div class="panel-footer">
+    {{post.time}}
+    {{update-post post=post update='update'}}
+    {{new-review saveReview = 'saveReview' post=post}}
+    <button class="btn bg-warning" {{action 'delete' post}}>Delete</button>
+    {{#if post.reviews}}
+      <h4>Reviews:</h4>
+      {{#each post.reviews as |review|}}
+       {{review-tile review=review}}
+      {{/each}}
+    {{/if}}
+  </div>
+</div>

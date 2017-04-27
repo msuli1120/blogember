@@ -1,0 +1,11 @@
+
+  <h2>Welcome to The Blog</h2>
+
+  {{post-place save='save'}}
+
+  <div class="feed">
+
+    {{#each model.posts as |post|}}
+      {{new-post post=post delete='delete' update='update' saveReview='saveReview'}}
+    {{/each}}
+  </div>

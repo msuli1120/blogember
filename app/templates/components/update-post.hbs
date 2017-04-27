@@ -1,0 +1,20 @@
+{{#if updateForm}}
+  <h4>update {{post.title}}</h4>
+  <form>
+    <div class="form-group">
+      <label for="posttitle">Title</label>
+      {{input value=posttitle id="posttitle" placeholder=post.title}}
+    </div>
+    <div class="form-group">
+      <label for="postdescription">Description</label>
+      {{input value=postdescription id="postdescription" placeholder=post.description}}
+    </div>
+    <div class="form-group">
+      <label for="postpicture">Picture</label>
+      {{input value=postpicture id="postpicture" placeholder=post.picture}}
+    </div>
+    <button class="btn bg-success" {{action 'confirm' post}}>Confirm</button>
+  </form>
+{{else}}
+  <button class="btn bg-info" {{action 'showForm'}}>Update</button>
+{{/if}}

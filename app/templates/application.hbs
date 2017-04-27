@@ -1,5 +1,23 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      {{#link-to 'index'}}<a class="navbar-brand">The Blog</a>{{/link-to}}
+    </div>
+    <ul class="nav navbar-nav">
+      <li>{{#link-to 'index'}}Home{{/link-to}}</li>
+      <li>{{#link-to 'about'}}About{{/link-to}}</li>
+      <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
+    </ul>
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+    </button>
+  </div>
+</nav>
+<div class="container">
+  {{outlet}}
 
-{{outlet}}
+  <footer>
+    Copyright (c) 2017 Copyright Xing Li All Rights Reserved.
+  </footer>
+
+</div>

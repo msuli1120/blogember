@@ -1,0 +1,64 @@
+
+@import "ember-bootstrap/bootstrap";
+
+nav {
+  button {
+    float: right;
+  }
+
+  a.navbar-brand {
+    font-family: 'Lobster', cursive;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+}
+
+
+
+.container{
+
+  h2 {
+    font-family: 'Lobster', cursive;
+  }
+
+  p {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  form.post-place {
+    height: 120px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    button {
+      background-color: grey;
+      color: white;
+    }
+  }
+  .text {
+    margin-left: 5%;
+  }
+
+  div.feed {
+    margin-top: 14%;
+  }
+
+  footer {
+    position: relative;
+    bottom: 0px;
+    margin-left: 30%;
+  }
+
+  div.panel-footer button {
+    float: right;
+    margin-top: -2.4%;
+  }
+
+  div.panel div.panel-body img {
+    height: 200px;
+    width: 300px;
+  }
+}
